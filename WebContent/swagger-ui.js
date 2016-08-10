@@ -113,7 +113,7 @@ this["Handlebars"]["templates"]["content_type"] = Handlebars.template({"1":funct
 
   return "<label data-sw-translate for=\""
     + alias3(((helper = (helper = helpers.contentTypeId || (depth0 != null ? depth0.contentTypeId : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"contentTypeId","hash":{},"data":data}) : helper)))
-    + "\">Response Content Type</label>\n<select name=\"contentType\" id=\""
+    + "\">Header Accept param</label>\n<select name=\"contentType\" id=\""
     + alias3(((helper = (helper = helpers.contentTypeId || (depth0 != null ? depth0.contentTypeId : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"contentTypeId","hash":{},"data":data}) : helper)))
     + "\">\n"
     + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.produces : depth0),{"name":"if","hash":{},"fn":this.program(1, data, 0),"inverse":this.program(4, data, 0),"data":data})) != null ? stack1 : "")
@@ -2615,7 +2615,7 @@ this["Handlebars"]["templates"]["operation"] = Handlebars.template({"1":function
     + this.escapeExpression(((helper = (helper = helpers.successCode || (depth0 != null ? depth0.successCode : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"successCode","hash":{},"data":data}) : helper)))
     + ")</h4>\n              "
     + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.successDescription : depth0),{"name":"if","hash":{},"fn":this.program(10, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
-    + "\n            <p><span class=\"model-signature\" /></p>\n            <br/>\n            <div class=\"response-content-type\" />\n            </div>\n";
+    + "\n                        <br/>\n            <div class=\"response-content-type\" />\n            </div>\n";
 },"10":function(depth0,helpers,partials,data) {
     var stack1, helper;
 
@@ -3049,7 +3049,7 @@ this["Handlebars"]["templates"]["response_content_type"] = Handlebars.template({
 
   return "<label data-sw-translate for=\""
     + alias3(((helper = (helper = helpers.responseContentTypeId || (depth0 != null ? depth0.responseContentTypeId : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"responseContentTypeId","hash":{},"data":data}) : helper)))
-    + "\">Response Content Type</label>\n<select name=\"responseContentType\" id=\""
+    + "\">Header Accept param</label>\n<select name=\"responseContentType\" id=\""
     + alias3(((helper = (helper = helpers.responseContentTypeId || (depth0 != null ? depth0.responseContentTypeId : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"responseContentTypeId","hash":{},"data":data}) : helper)))
     + "\">\n"
     + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.produces : depth0),{"name":"if","hash":{},"fn":this.program(1, data, 0),"inverse":this.program(4, data, 0),"data":data})) != null ? stack1 : "")
@@ -3058,14 +3058,14 @@ this["Handlebars"]["templates"]["response_content_type"] = Handlebars.template({
 this["Handlebars"]["templates"]["signature"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
     var stack1, helper;
 
-  return "\n<div>\n<ul class=\"signature-nav\">\n  <li><a class=\"description-link\" href=\"#\" data-sw-translate>Model</a></li>\n  <li><a class=\"snippet-link\" href=\"#\" data-sw-translate>Example Value</a></li>\n</ul>\n<div>\n\n<div class=\"signature-container\">\n  <div class=\"description\">\n    "
-    + ((stack1 = ((helper = (helper = helpers.signature || (depth0 != null ? depth0.signature : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"signature","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + "\n  </div>\n\n  <div class=\"snippet\">\n"
-    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.sampleJSON : depth0),{"name":"if","hash":{},"fn":this.program(2, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.sampleXML : depth0),{"name":"if","hash":{},"fn":this.program(5, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
-    + "  </div>\n</div>\n";
-},"2":function(depth0,helpers,partials,data) {
-    var stack1, helper;
+//  return "\n<div>\n<ul class=\"signature-nav\">\n  <li><a class=\"description-link\" href=\"#\" data-sw-translate>Model</a></li>\n  <li><a class=\"snippet-link\" href=\"#\" data-sw-translate>Example Value</a></li>\n</ul>\n<div>\n\n<div class=\"signature-container\">\n  <div class=\"description\">\n    "
+//    + ((stack1 = ((helper = (helper = helpers.signature || (depth0 != null ? depth0.signature : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"signature","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+//    + "\n  </div>\n\n  <div class=\"snippet\">\n"
+//    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.sampleJSON : depth0),{"name":"if","hash":{},"fn":this.program(2, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+//    + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.sampleXML : depth0),{"name":"if","hash":{},"fn":this.program(5, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
+//    + "  </div>\n</div>\n";
+//},"2":function(depth0,helpers,partials,data) {
+//    var stack1, helper;
 
   return "      <div class=\"snippet_json\">\n        <pre><code>"
     + this.escapeExpression(((helper = (helper = helpers.sampleJSON || (depth0 != null ? depth0.sampleJSON : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"sampleJSON","hash":{},"data":data}) : helper)))
